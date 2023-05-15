@@ -4,28 +4,24 @@
 import { styled} from 'styled-components';
 
 
-const getUrl = (url: string) => {
-  return `${ process.env.PUBLIC_URL }/${ url }`
-};
-
 const WORKS_LIST = [
   {
     name: '制作物A',
     description: '説明文................................................................',
-    linkUrl: getUrl('static/works/bingo/index.html'),
-    imageUrl: getUrl('static/images/works_clock.jpeg'),
+    linkUrl: './static/works/bingo/index.html',
+    imageUrl: './static/images/works_clock.jpeg',
   },
   {
     name: '制作物B',
     description: '説明文................................................................',
-    linkUrl: getUrl('static/works/bingo/index.html'),
-    imageUrl: getUrl('static/images/works_dim_cafe.jpeg'),
+    linkUrl: './static/works/bingo/index.html',
+    imageUrl: './static/images/works_dim_cafe.jpeg',
   },
   {
     name: '制作物C',
     description: '説明文................................................................',
-    linkUrl: getUrl('static/works/bingo/index.html'),
-    imageUrl: getUrl('static/images/works_japan_autumn.jpeg'),
+    linkUrl: './static/works/bingo/index.html',
+    imageUrl: './static/images/works_japan_autumn.jpeg',
   },
 ];
 
@@ -128,7 +124,7 @@ height: 600px;
 
 /* 画像の設定 */
 background-color: black;
-background-image: url(${ () => getUrl('/static/images/hero.jpeg') });
+background-image: url(./static/images/hero.jpeg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
